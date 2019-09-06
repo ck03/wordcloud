@@ -7,8 +7,8 @@ import operator
 
 
 def GetWordCloud():
-    path_txt = 'D://study/python2/03爬蟲/aa.txt'
-    path_img = "D://study/python2/03爬蟲/bb.jpg"
+    path_txt = 'D://aa.txt'
+    path_img = "D://bb.jpg"
     f = open(path_txt, 'r', encoding='UTF-8').read()
     background_image = np.array(Image.open(path_img))
     # 結巴分詞，生成字符串，如果不通過分詞，無法直接生成正確的中文詞雲,感興趣的朋友可以去查一下，有多種分詞模式
